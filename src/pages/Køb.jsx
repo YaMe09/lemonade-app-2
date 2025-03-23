@@ -15,7 +15,8 @@ function Køb() {
         // Tilføj en pris til hver drink
         const drinksWithPrice = (data.drinks || []).map(drink => ({
           ...drink, 
-          price: drink.idDrink % 2 === 0 ? 50 : 35 
+          price: 10
+
       }));
       setDrinks(drinksWithPrice);
       });
@@ -41,10 +42,10 @@ function Køb() {
                 <p className="subtitle is-6 mt-4">{drink.strCategory}</p>
                 <p className="subtitle is-6">{drink.strGlass}</p>
                 <p className="subtitle is-6">{drink.strInstructions}</p>
-                <p className="subtitle is-6">pris: ${drink.price}</p>
+                
                 <button className="button has-shadow mt-5" style={{ boxShadow: '#50f4a9 0 0 0.5em', color: '#188151' }}
-                    onClick={() => dispatch(addToCart({ id: drink.idDrink, name: drink.strDrink, price: drink.price }))} >
-                    Tilføj til kurv 🍋 
+                    onClick={() => dispatch(addToCart({ id: drink.idDrink, name: drink.strDrink, price: drink.price, quantity: 1  }))} >
+                    Tilføj til kurv 🍋 $ 10
                 </button>
               </div>
             </div>
