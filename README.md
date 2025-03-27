@@ -1,12 +1,26 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Beskrivelse
+Dette er mini lemonade webshop. Webshopen er bygget med React 19 og vite og bulma css frameworks.
 
-Currently, two official plugins are available:
+værktøjer
+React 19
+Bulma CSS Framework
+Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation
+For at køre dette projekt lokalt, skal du følge disse trin: git clone https://github.com/arein1989/lemonade-app-2/
+Naviger til mappen: cd arein1989/lemonade-app-2/
 
-## Expanding the ESLint configuration
+npm install
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Trin 5: Brug
+Når du åbner Webshopen, kan du navigere rundt på enten ved at bruge navigationen eller trykke på Velkommen knapp i forside. 
+
+
+Kontakt
+Hvis du har spørgsmål eller feedback, kan du kontakte mig på:
+
+Email: me14ya17@gmail.com
+LinkedIn: https://www.linkedin.com/in/arein-hussein/
