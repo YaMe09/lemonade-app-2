@@ -27,5 +27,5 @@ jobs:
 
       - name: Deploy to Vercel
         env:
-          VERCEL_TOKEN: ${{ secrets.LemonadeNext }}  # Add this secret in GitHub repo settings
+          VERCEL_TOKEN: ${{ secrets.LEMONADENEXT }}  # Add this secret in GitHub repo settings
         run: npx vercel --prod --token $VERCEL_TOKEN
