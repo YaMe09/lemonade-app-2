@@ -1,4 +1,4 @@
-import LemonadeLogo from '../assets/lemonadeLogo.png';
+import LemonadeLogo from '../assets/LemonadeLogo.png';
 import 'bulma/css/bulma.min.css';
 import { useNavigate } from 'react-router-dom';
 
