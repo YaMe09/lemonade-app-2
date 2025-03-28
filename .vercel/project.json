@@ -1,1 +1,19 @@
-{"projectId":"prj_ZLR3oC5vuuUed27MIDEjsVCj1Cmm","orgId":"team_iatqLEx1b9vjR6by4gr2BbfO"}
+{"projectId":"prj_ZLR3oC5vuuUed27MIDEjsVCj1Cmm","orgId":"team_iatqLEx1b9vjR6by4gr2BbfO",
+"version": 2,
+    "builds": [
+      {
+        "src": "vite.config.js",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist",
+          "outputDirectory": "dist"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/dist/$1"
+      }
+    ]
+  }
