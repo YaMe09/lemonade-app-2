@@ -1,31 +1,30 @@
-name: Deploy to Vercel
-
+name: Deploy Lemonade-app 2
+ 
 on:
   push:
     branches:
-      - main  # Change this if your default branch is different (like 'master')
-
+      - main  # Use main branch instead of gh-pages
+ 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
+ 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
         with:
-          node-version: 20  # Match your local Node.js version
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Next.js app
-        run: npm run build
-
-      - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.lemonadestand }}  # Add this secret in GitHub repo settings
-        run: npx vercel --prod --token $VERCEL_TOKEN
+          repository: arein1989/lemonade-app-2
+ 
+      - name: Install Dependencies
+        run: npm install || echo "No dependencies to install"
+ 
+     # - name: Compile SCSS to CSS (if applicable)
+      #  run: npm run build-css || echo "No SCSS compilation needed"
+ 
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+ 
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+            path: lemonade-app-2/
