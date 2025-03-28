@@ -4,7 +4,7 @@ import { removeFromCart, updateQuantity } from '../Redux/cartSlice';
 import 'bulma/css/bulma.min.css';
 import Navbar from '../components/navbar';
 import { useNavigate } from 'react-router-dom';
-import Trest from '../assets/Trest.jpg';
+import Trest from '../assets/trest.jpg';
 
 
 function Cart() {
