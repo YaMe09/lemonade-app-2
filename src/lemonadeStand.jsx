@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { sellLemonade, buyLemons } from '../src/Redux/LEMONADE_profit'; 
+import { sellLemonade, buyLemons } from './Redux/LemonadeProfitSlice'; 
 import 'bulma/css/bulma.min.css';
 import Image from './assets/2bagground.png';
 import Navbar from './components/navbar';
