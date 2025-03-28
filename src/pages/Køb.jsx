@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'bulma/css/bulma.min.css';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../redux/cartSlice'; 
+import { addToCart } from '../Redux/cartSlice'; 
 import Navbar from '../components/navbar';
 
 function Køb() {
