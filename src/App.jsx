@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Forside from './pages/Forside';
 import LemonadeStand from './lemonadeStand';
 import Køb from './pages/Køb';
-import Cart from './pages/cart';
+import Cart from './pages/Cart';
 import ChickOut from './pages/ChickOut';
 import Tak from './pages/Tak';
 
