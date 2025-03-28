@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import LemonadeProfit from './Lemonade_profit';
-import cartReducer from '../redux/cartSlice';
+import cartReducer from './cartSlice';
 
 const store = configureStore({
   reducer: {
